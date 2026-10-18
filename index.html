@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Research to Reels | Steer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+
+        <a href="#" class="brand">steer</a>
+
+        <nav>
+            <a href="#workflow">Workflow</a>
+            <a href="#studio">Content studio</a>
+            <a href="#review">Doctor review</a>
+        </nav>
+
+        <button
+            class="nav-button"
+            onclick="document.getElementById('upload').scrollIntoView({behavior:'smooth'})"
+        >
+            Start creating ↗
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="status-dot"></span>
+                    steer research studio
+                </div>
+
+                <h1>
+                    Science worth<br>
+                    <em>sharing.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Turn dense research papers into clear, credible Instagram
+                    content. One paper at a time. Every claim connected to its source.
+                </p>
+
+                <div class="hero-actions">
+
+                    <button
+                        class="primary-button"
+                        onclick="document.getElementById('upload').scrollIntoView({behavior:'smooth'})"
+                    >
+                        Start with a paper ↗
+                    </button>
+
+                    <a href="#workflow" class="text-link">
+                        Explore the workflow ↓
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    <span>✳</span>
+                    Doctor-led. Evidence-first. Made for India.
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="paper-topline">
+                    <span>the research note</span>
+                    <span>001 / steer</span>
+                </div>
+
+                <div class="paper-illustration">
+
+                    <div class="illustration-circle"></div>
+
+                    <div class="illustration-line line-one"></div>
+                    <div class="illustration-line line-two"></div>
+                    <div class="illustration-line line-three"></div>
+
+                    <span class="illustration-number">01</span>
+
+                </div>
+
+                <p class="paper-label">from paper to people</p>
+
+                <h2>
+                    Good science<br>
+                    deserves a<br>
+                    <em>better story.</em>
+                </h2>
+
+                <div class="paper-footer">
+                    <span>Research → Content</span>
+                    <span>✳</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- WORKFLOW SECTION -->
+        <section class="workflow section" id="workflow">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">the process</p>
+
+                <h2>
+                    From dense papers<br>
+                    to <em>everyday clarity.</em>
+                </h2>
+
+                <p>
+                    One repeatable workflow. Multiple content formats.
+                </p>
+
+            </div>
+
+
+            <div class="workflow-grid">
+
+                <article class="workflow-card">
+
+                    <span class="step-number">01</span>
+
+                    <div class="step-icon">↥</div>
+
+                    <h3>Bring the science</h3>
+
+                    <p>
+                        Upload a research PDF, add a paper link,
+                        or paste its text.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <span class="step-number">02</span>
+
+                    <div class="step-icon">⌕</div>
+
+                    <h3>Extract the evidence</h3>
+
+                    <p>
+                        Identify findings, statistics, limitations,
+                        and source references. Every quote is checked
+                        against the paper.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <span class="step-number">03</span>
+
+                    <div class="step-icon">✳</div>
+
+                    <h3>Shape the story</h3>
+
+                    <p>
+                        Translate the evidence into simple,
+                        warm, Indian-audience-friendly content.
+                    </p>
+
+                </article>
+
+
+                <article class="workflow-card">
+
+                    <span class="step-number">04</span>
+
+                    <div class="step-icon">✓</div>
+
+                    <h3>Review before sharing</h3>
+
+                    <p>
+                        Show claim-level sources and keep content
+                        locked until doctor approval.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- UPLOAD SECTION -->
+        <section class="upload-section section" id="upload">
+
+            <div class="upload-heading">
+
+                <p class="eyebrow">your next research note</p>
+
+                <h2>
+                    Let's start with<br>
+                    <em>a paper.</em>
+                </h2>
+
+                <p>
+                    Choose your source material to begin creating.
+                </p>
+
+            </div>
+
+
+            <div class="upload-box">
+
+                <div class="upload-symbol">↥</div>
+
+                <h3>Bring your research here</h3>
+
+                <p>
+                    Upload a PDF, paste a paper link, or paste research text.
+                </p>
+
+
+                <!-- PDF UPLOAD -->
+                <label for="paperFile" class="upload-button">
+                    Choose a PDF
+                </label>
+
+                <input
+                    type="file"
+                    id="paperFile"
+                    accept=".pdf,application/pdf"
+                >
+
+                <p class="file-name" id="fileName">
+                    No paper selected
+                </p>
+
+
+                <div class="divider">
+                    <span>or paste a link or text</span>
+                </div>
+
+
+                <!-- PAPER LINK -->
+                <input
+                    type="url"
+                    id="paperUrl"
+                    class="input-field"
+                    placeholder="https://pmc.ncbi.nlm.nih.gov/articles/..."
+                >
+
+
+                <!-- RESEARCH TEXT -->
+                <textarea
+                    id="paperText"
+                    class="input-field paper-textarea"
+                    placeholder="Or paste the research abstract / paper text here..."
+                ></textarea>
+
+
+                <!-- GENERATE BUTTON -->
+                <button id="generateButton" type="button">
+                    Generate Content
+                </button>
+
+
+                <!-- STATUS MESSAGE -->
+                <p class="input-help">
+                    Priority: PDF, then pasted text, then link.
+                    AI-generated content requires doctor review.
+                </p>
+
+                <div
+                    id="uploadStatus"
+                    class="status-message"
+                    aria-live="polite"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTENT STUDIO -->
+        <section class="studio-section section" id="studio">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">the content studio</p>
+
+                <h2>
+                    One source.<br>
+                    <em>Three ways to share.</em>
+                </h2>
+
+                <p>
+                    Explore the formats your research can become.
+                </p>
+
+            </div>
+
+
+            <div class="content-grid">
+
+                <!-- CAROUSEL -->
+                <article class="content-card carousel-card">
+
+                    <div class="content-preview carousel-preview">
+
+                        <span class="preview-tag">
+                            01 / carousel
+                        </span>
+
+                        <span class="preview-decoration">✳</span>
+
+                        <h3>
+                            Let's make<br>
+                            science <em>simple.</em>
+                        </h3>
+
+                        <p>
+                            A swipe-worthy story, backed by evidence.
+                        </p>
+
+                        <div class="preview-pagination">
+                            ● ● ● ○ ○
+                        </div>
+
+                    </div>
+
+
+                    <div class="content-info">
+
+                        <span class="format-label">
+                            multi-slide post
+                        </span>
+
+                        <h3>Instagram carousel</h3>
+
+                        <p>
+                            A clear hook, useful explanation,
+                            and evidence-backed takeaway. Download as PNG.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- STATIC POST -->
+                <article class="content-card static-card">
+
+                    <div class="content-preview static-preview">
+
+                        <span class="preview-tag">
+                            02 / static
+                        </span>
+
+                        <h3>
+                            Small habits.<br>
+                            <em>Long-term thinking.</em>
+                        </h3>
+
+                        <div class="static-divider"></div>
+
+                        <p>
+                            Good health content starts with good evidence.
+                        </p>
+
+                        <span class="static-brand">
+                            steerclub.com
+                        </span>
+
+                    </div>
+
+
+                    <div class="content-info">
+
+                        <span class="format-label">
+                            single image
+                        </span>
+
+                        <h3>Static post</h3>
+
+                        <p>
+                            One meaningful message,
+                            designed to be remembered. Download as PNG.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- REEL -->
+                <article class="content-card reel-card">
+
+                    <div class="content-preview reel-preview">
+
+                        <span class="preview-tag">
+                            03 / reel
+                        </span>
+
+                        <div class="reel-play">▶</div>
+
+                        <h3>
+                            Research,<br>
+                            in <em>real life.</em>
+                        </h3>
+
+                        <div class="reel-timeline">
+                            <span></span>
+                        </div>
+
+                        <p>
+                            voiceover · subtitles · visuals
+                        </p>
+
+                    </div>
+
+
+                    <div class="content-info">
+
+                        <span class="format-label">
+                            short-form video
+                        </span>
+
+                        <h3>AI video reel</h3>
+
+                        <p>
+                            A short script with scene ideas,
+                            voiceover, and subtitles.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- AI GENERATED RESULTS APPEAR HERE -->
+            <div
+                class="generated-content"
+                id="generatedContent"
+                hidden
+            ></div>
+
+        </section>
+
+
+        <!-- DOCTOR REVIEW SECTION -->
+        <section class="review-section section" id="review">
+
+            <div class="review-copy">
+
+                <p class="eyebrow">the non-negotiable</p>
+
+                <h2>
+                    Evidence first.<br>
+                    <em>Always.</em>
+                </h2>
+
+                <p>
+                    Health content should never outrun the science.
+                    Every medical claim needs a traceable source,
+                    and a qualified doctor must review it before publication.
+                </p>
+
+                <div class="review-signoff">
+
+                    <span>✳</span>
+
+                    <span>
+                        Trust is built one accurate claim at a time.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="review-panel">
+
+                <div class="review-panel-heading">
+
+                    <span>content review</span>
+
+                    <span class="pending-badge">
+                        doctor review
+                    </span>
+
+                </div>
+
+
+                <div class="review-item">
+
+                    <span class="review-check">01</span>
+
+                    <div>
+                        <h3>Source traceability</h3>
+                        <p>
+                            Check the original paper and evidence for each claim.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="review-item">
+
+                    <span class="review-check">02</span>
+
+                    <div>
+                        <h3>Scientific accuracy</h3>
+                        <p>
+                            Confirm wording, study limitations, and context.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="review-item">
+
+                    <span class="review-check">03</span>
+
+                    <div>
+                        <h3>Doctor approval</h3>
+                        <p>
+                            Approval must happen before a post can be published.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="review-footer">
+
+                    <span>Publication status</span>
+
+                    <strong>Not approved</strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CLOSING SECTION -->
+        <section class="closing-section">
+
+            <p class="eyebrow">
+                steer research studio
+            </p>
+
+            <h2>
+                Lose well. Live well.<br>
+                <em>Understand the science.</em>
+            </h2>
+
+            <a href="#upload" class="primary-button">
+                Start with a paper ↗
+            </a>
+
+            <p class="closing-note">
+                Educational content only.
+                Medical claims require qualified clinical review.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <a href="#" class="brand">steer</a>
+
+        <p>
+            Research translated with care.
+        </p>
+
+        <a
+            href="https://steerclub.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            steerclub.com ↗
+        </a>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <!-- html2canvas is used to download slides as PNG images -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
