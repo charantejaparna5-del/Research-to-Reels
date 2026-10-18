@@ -3,7 +3,7 @@
 // ============================================
 
 // Deploy chesaka ikkada mee Render URL pettandi, udaharanaku "https://xxxx.onrender.com"
-const API_URL = "http://localhost:5000";
+const API_URL = "https://research-to-reels.onrender.com";
 
 const paperFile = document.getElementById("paperFile");
 const paperUrl = document.getElementById("paperUrl");
